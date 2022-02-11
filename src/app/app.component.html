@@ -1,0 +1,7 @@
+<input type="file" (change)="upload($event)" accept="image/png, image/jpeg" />
+
+<input type="file" (change)="uploadMultiple($event)" multiple accept="image/png, image/jpeg" />
+
+<button (click)="getFileName()" >Show Image</button>
+
+<img [src]="imageToShow" alt="" width="350">
